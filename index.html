@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="includes/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-</head>
-<body>
-  
-  <div class="container right">
-    <div class="content">
-      <p>dskjdajs</p>
-    </div>
-  </div>
- 
-
-</body>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WiseStamp-</title>
+        <link rel="stylesheet" href="includes/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <script>
+        function myFunction() {
+            var div = document.createElement('div');
+            div.className='loader';
+            document.getElementById("formPanel").appendChild(div);
+            document.getElementById("but").innerHTML = "Loading...";
+        }
+    </script>
+    <body>
+        <main>
+            <div class="icon">
+                <section>
+                    <img src="./includes/envelope.png">
+                    <br>
+                    <span>Welcome to</span>
+                    <br>
+                    <b>MailApp</b>
+                </section>
+            </div>
+            <div class="panel-cont">
+                <div class="panel panel-default right">
+                    <div class="panel-body" id="formPanel">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="Enter your name" />
+                            <i class="glyphicon glyphicon-user gray form-control-feedback"></i>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="password" class="form-control" placeholder="Password" />
+                            <i class="glyphicon glyphicon-lock gray form-control-feedback"></i>
+                        </div>
+                        <button onclick="myFunction()" id="but" type="text" class="btn btn-block btn-danger ">Login</button>                        
+                        <a href="#">Lost your password?</a>            
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
